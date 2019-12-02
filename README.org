@@ -1,4 +1,30 @@
-* Creating a virtual environment for this course
+
+* Introduction
+
+This is a repo hosting my follow along code and notes from the [[https://github.com/talkpython/100daysofcode-with-python-course][TalkPython course]] 100 days of code with Python.
+
+* Prep
+
+** Outline of methodology and tools
+
+The development is done in Emacs with multi-language Org mode notebooks, from which code is wrangled to separate script files in specified locations as you see. The code is also exported directly to jupyter notebooks.
+
+** Adding the forked course material as a Subtree
+
+/I've used submodules in the past, but apparently subtrees is a better approach for code that I will mostly use as a reference more than anything else. As usual magit helped make things rather simple./
+
+Having a separate repository enables me to setup the project as desired and perhaps add more subtrees for different apps. It may be interesting to combine this notebook with streamlit apps
+
+** Creating a folder directory to work in
+
+#+BEGIN_SRC sh
+mkdir -p 01_scripts/
+mkdir -p 02_data
+mkdir -p 03_notebooks
+#+END_SRC
+
+
+** Creating a virtual environment for this course
 Using conda:
 
 #+BEGIN_SRC sh

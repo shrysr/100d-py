@@ -1,0 +1,71 @@
+* Creating a virtual environment for this course
+Using conda:
+
+#+BEGIN_SRC sh
+conda create -n 100dpython
+#+END_SRC
+
+Activating the environment:
+
+#+BEGIN_SRC sh
+conda activate 100dpython
+#+END_SRC
+
+Installing bob's requirements:
+
+#+BEGIN_SRC sh
+pip install -r requirements/bob-requirements.txt
+#+END_SRC
+
+
+* Days 1-3
+:PROPERTIES:
+:header-args: :session 100d01 :results verbatim
+:END:
+
+A simple procedure to enter in Christmas as a date and calculate the number of days from today till Christmas.
+
+#+BEGIN_SRC ipython
+from datetime import datetime
+from datetime import date
+
+datetime.today()
+date.today()
+
+type(datetime.today())
+type(date.today())
+
+today_date = date.today()
+
+today_date.month
+
+# Defining a date object
+christmas_date = date(2019, 12, 25)
+
+# Days until christmas_date
+(christmas_date - today_date).days
+(christmas_date - today_date)
+
+if christmas_date is not today_date:
+    print("There are " + str((christmas_date - today_date).days) + " days left till Christmas")
+else:
+    print("Today is Christmas")
+#+END_SRC
+
+#+RESULTS:
+:results:
+# Out [2]:
+# output
+There are 24 days left till Christmas
+
+:end:
+
+** Time delta
+
+#+BEGIN_SRC ipython
+
+#+END_SRC
+
+
+
+* Days 4-6
